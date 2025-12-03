@@ -1,73 +1,107 @@
-# React + TypeScript + Vite
+# Product Management Dashboard (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Product Management application built using **React**, **TypeScript**, and **Pure CSS** as part of a technical assessment.  
+It allows users to view, search, add, edit and active/inactive products efficiently with a clean UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+🔗 **Vercel Deployment:** https://product-management-react-assessment.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 GitHub Repository  
+🔗 https://github.com/anushayaragogu0309/product-management-react-assessment
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### ✅ Product List & Grid Views
+- Table view (list)
+- Card view (grid)
+- Toggle between views
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🔍 Search with Debounce
+- Search by product name  
+- Debounce of **500ms** to optimize performance
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📝 Add & Edit Product
+- Popup modal form
+- Form fields:
+  - Name (required)
+  - Price (required, number)
+  - Category (required)
+  - Stock (number)
+  - Description (optional)
+  - Tags (multi-select)
+  - Active status (boolean)
+- Inline form validation
+- Editing pre-fills the form with product details
+- Updates stored in local React state (no backend)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🧭 Pagination
+- 10 products per page  
+- Next / Previous navigation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Tech Stack
+- **React 18**
+- **TypeScript**
+- **Vite**
+- **Pure CSS**
+- **Vercel** for deployment
+
+---
+
+## 📁 Folder Structure
+
+src/
+│── components/
+│ ├── ProductTable.tsx
+│ ├── ProductCardGrid.tsx
+│ ├── ProductFormModal.tsx
+│── pages/
+│ ├── ProductPage.tsx
+│── interfaces/
+│ ├── Product.interface.ts
+│── App.tsx
+│── main.tsx
+│── style.css
+
+
+
+---
+
+## ▶️ How to Run Locally
+
+1. Clone the repository:
+git clone https://github.com/anushayaragogu0309/product-management-react-assessment.git
+
+2. Navigate to the folder:
+cd your-repo-name
+
+3. Install dependencies:
+npm install
+
+4. Start the development server:
+npm run dev
+
+
+---
+
+## 📌 Notes
+- No external UI libraries used — **100% custom CSS**.
+- Entire product list handled using React state.
+- Clean TypeScript interfaces for better type safety.
+
+---
+
+## ✨ Author
+**Anusha Yaragogu**  
+Frontend Developer | React | Angular | TypeScript  
+
+---
+
+
