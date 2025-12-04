@@ -100,7 +100,7 @@ npm run dev
 
 ## ✨ Author
 **Anusha Yaragogu**  
-Frontend Developer | React | Angular | TypeScript | JavaScript 
+Frontend Developer | React | Angular | TypeScript | JavaScript |
 
 ---
 
