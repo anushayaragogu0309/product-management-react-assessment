@@ -62,6 +62,7 @@ src/
 │ ├── ProductTable.tsx
 │ ├── ProductCardGrid.tsx
 │ ├── ProductFormModal.tsx
+│ ├── ProductFilter.tsx
 │── pages/
 │ ├── ProductPage.tsx
 │── interfaces/
