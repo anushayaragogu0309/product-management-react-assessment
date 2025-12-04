@@ -64,7 +64,7 @@ export default function ProductForm({ product, onSubmit, onCancel }: ProductForm
       <label className="form-group">
         Name
         <input
-          type="text"
+          type="text" placeholder="Enter Name"
           value={form.name}
           onChange={(e) => { handleChange("name", e.target.value); setFieldErrors({ ...fieldErrors, name: "" }); }}
         />
@@ -75,7 +75,7 @@ export default function ProductForm({ product, onSubmit, onCancel }: ProductForm
       <label className="form-group">
         Price
         <input
-          type="number"
+          type="number" placeholder="Enter Price"
           value={form.price}
           onChange={(e) => { handleChange("price", Number(e.target.value)); setFieldErrors({ ...fieldErrors, price: "" }); }}
         />
@@ -86,7 +86,7 @@ export default function ProductForm({ product, onSubmit, onCancel }: ProductForm
       <label className="form-group">
         Category
         <input
-          type="text"
+          type="text" placeholder="Enter Category"
           value={form.category}
           onChange={(e) => { handleChange("category", e.target.value); setFieldErrors({ ...fieldErrors, category: "" }); }}
         />
@@ -97,7 +97,7 @@ export default function ProductForm({ product, onSubmit, onCancel }: ProductForm
       <label className="form-group">
         Stock
         <input
-          type="number"
+          type="number" placeholder="Enter Stock"
           value={form.stock}
           onChange={(e) => handleChange("stock", Number(e.target.value))}
         />
@@ -107,7 +107,7 @@ export default function ProductForm({ product, onSubmit, onCancel }: ProductForm
       <label className="form-group">
         Description
         <textarea
-          value={form.description}
+          value={form.description} placeholder="Enter Description"
           onChange={(e) => handleChange("description", e.target.value)}
         ></textarea>
       </label>
